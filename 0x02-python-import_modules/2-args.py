@@ -9,4 +9,6 @@ if __name__ == "__main__":
     else:
         print('.')
     for index, argument in enumerate(sys.argv):
+        if index == 0:
+            continue
         print("{}: {}".format(index, argument))
