@@ -7,4 +7,3 @@ for count in range(0, 10):
             print("{}{}".format(count, counter))
             continue
         print("{}{}, ".format(count, counter), end="")
-
