@@ -7,7 +7,7 @@ if __name__ == "__main__":
     elif count > 1:
         print("{} arguments:".format(count))
     else:
-        print('.')
+        print('0 arguments.')
     for index, argument in enumerate(sys.argv):
         if index == 0:
             continue
