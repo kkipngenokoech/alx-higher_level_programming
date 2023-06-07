@@ -5,4 +5,4 @@ for count in range(0,100):
     elif count == 99:
         print("{}".format(count))
         continue
-    print("{}".format(count), ",", end="")
+    print("{}, ".format(count), end="")
