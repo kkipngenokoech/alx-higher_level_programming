@@ -5,4 +5,4 @@ if __name__ == "__main__":
     sum = 0
     for item in integers:
         sum += int(item) 
-    print(sum)
+    print("{}".format(sum))
