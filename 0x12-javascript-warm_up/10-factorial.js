@@ -1,14 +1,12 @@
 #!/usr/bin/node
-function factorial(factor, count){
-	count *= factor
-	factor--
-	while(factor > 1){
-		factorial(factor, count)
-		factor--
-		if(factor === 1){
-			console.log(count)
-		}
-	}
+function factorial (n) {
+  if (n < 0) {
+    return (-1);
+  }
+  if (n === 0 || isNaN(n)) {
+    return (1);
+  }
+  return (n * factorial(n - 1));
 }
-arg = parseInt(process.argv[2])
-factorial(arg, 1)
+
+console.log(factorial(Number(process.argv[2])));
