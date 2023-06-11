@@ -1,11 +1,11 @@
 #!/usr/bin/node
-square = parseInt(process.argv[2])
-if (square){
-	index = 0
-	for (;index < square; index++)
-		for (count = 0; count < square; count++)
-			console.log('X')
-}
-else {
-	console.log('Missing size')
+if (process.argv[2] === undefined || isNaN(process.argv[2])) {
+  console.log('Missing size');
+} else {
+  const x = Number(process.argv[2]);
+  let i = 0;
+  while (i < x) {
+    console.log('X'.repeat(x));
+    i++;
+  }
 }
