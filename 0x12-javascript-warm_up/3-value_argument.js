@@ -1,10 +1,6 @@
 #!/usr/bin/node
-const arguments = process.argv.slice(2)
-if (arguments != 0){
-	arguments.forEach((arg, index)=>{
-		console.log(`${arg}`)
-	})
-}
-else {
-	console.log('No argument')
+if (process.argv[2] === undefined) {
+  console.log('No argument');
+} else {
+  console.log(process.argv[2]);
 }
