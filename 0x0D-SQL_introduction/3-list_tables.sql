@@ -1,2 +1,2 @@
---- list all tables in the schema.
+-- Lists all tables of a database on my MySQL server.
 SHOW TABLES;
